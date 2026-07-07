@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tree01",
+    "title": "Tree 01",
+    "image": "images/tree01.jpeg",
+    "category": "Tree",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "tree02",
+    "title": "Tree 02",
+    "image": "images/tree02.jpeg",
+    "category": "Tree",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "tree03",
+    "title": "Tree 03",
+    "image": "images/Tree03.jpeg",
+    "category": "Tree",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "tree04",
+    "title": "Tree 04",
+    "image": "images/tree04.jpeg",
+    "category": "Tree",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "tree05-1",
+    "title": "Tree 05-1",
+    "image": "images/Tree05_1.jpeg",
+    "category": "Tree",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "light01",
+    "title": "Light 01",
+    "image": "images/light01.jpg",
+    "category": "Light",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "light02",
+    "title": "Light 02",
+    "image": "images/light02.jpeg",
+    "category": "Light",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "main",
+    "title": "Main",
+    "image": "images/main.JPG",
+    "category": "Painting",
+    "year": "",
+    "medium": "",
+    "size": ""
+  }
+]

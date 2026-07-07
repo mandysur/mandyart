@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandy ART - Full View</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#111;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+header{padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:16px;background:rgba(0,0,0,.45)}
+a{color:#9fd8ff;text-decoration:none}
+.brand{font-size:18px;letter-spacing:.03em}
+.info{text-align:right;font-size:14px;opacity:.85}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:18px}
+img{max-width:96vw;max-height:82vh;object-fit:contain;box-shadow:0 0 28px rgba(0,0,0,.55)}
+.message{max-width:720px;line-height:1.6;padding:24px;background:#1e1e1e;border-radius:10px}
+.details{padding:0 18px 18px;text-align:center;color:#ccc;font-size:14px}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><a href="index.html">Mandy ART</a></div>
+  <div class="info" id="title"></div>
+</header>
+<main id="viewer"></main>
+<div class="details" id="details"></div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+const viewer = document.getElementById("viewer");
+const title = document.getElementById("title");
+const details = document.getElementById("details");
+
+fetch("artworks.json")
+  .then(r => r.json())
+  .then(data => {
+    const art = data.find(a => a.id === id);
+    if(!art){
+      viewer.innerHTML = `<div class="message"><h2>Artwork not found</h2><p><a href="index.html">Go back to gallery</a></p></div>`;
+      return;
+    }
+    document.title = art.title + " - Mandy ART";
+    title.textContent = art.title;
+    const img = document.createElement("img");
+    img.src = art.image;
+    img.alt = art.title;
+    viewer.appendChild(img);
+    details.textContent = [art.year, art.medium, art.size].filter(Boolean).join(" · ");
+  })
+  .catch(() => {
+    viewer.innerHTML = `<div class="message"><h2>Could not load artwork data.</h2><p><a href="index.html">Go back to gallery</a></p></div>`;
+  });
+</script>
+</body>
+</html>

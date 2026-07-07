@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandy ART - Full View</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #111;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    width: 100%;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background: rgba(0,0,0,.45);
+  }
+  .brand { font-size: 18px; letter-spacing: .03em; }
+  .filename { font-size: 14px; opacity: .75; word-break: break-all; text-align: right; }
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+  }
+  img, video {
+    max-width: 96vw;
+    max-height: 86vh;
+    object-fit: contain;
+    box-shadow: 0 0 28px rgba(0,0,0,.55);
+  }
+  .message {
+    max-width: 720px;
+    line-height: 1.6;
+    padding: 24px;
+    background: #1e1e1e;
+    border-radius: 10px;
+  }
+  a { color: #9fd8ff; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Mandy ART</div>
+  <div class="filename" id="fileName"></div>
+</header>
+<main id="viewer"></main>
+
+<script>
+const files = {
+  "IMG_6105.HEIC": "IMG_6105.HEIC",
+  "IMG_6106.HEIC": "IMG_6106.HEIC",
+  "IMG_6107.HEIC": "IMG_6107.HEIC",
+  "IMG_6108.HEIC": "IMG_6108.HEIC",
+  "IMG_6109.HEIC": "IMG_6109.HEIC",
+  "light01_1.MOV": "light01_1.MOV",
+  "light01_30x24.jpg": "light01_30x24.jpg",
+  "main copy.JPG": "main copy.JPG",
+  "main.JPG": "main.JPG",
+  "tree01.jpeg": "tree01.jpeg",
+  "tree02.jpeg": "tree02.jpeg",
+  "Tree03.jpeg": "Tree03.jpeg",
+  "tree04.jpeg": "tree04.jpeg",
+  "Tree05_1.jpeg": "Tree05_1.jpeg",
+  "tree05_2.jpeg": "tree05_2.jpeg",
+  "tree05_3.jpeg": "tree05_3.jpeg"
+};
+
+const params = new URLSearchParams(window.location.search);
+let requested = params.get("img") || "tree01.jpeg";
+requested = decodeURIComponent(requested);
+
+const viewer = document.getElementById("viewer");
+const fileName = document.getElementById("fileName");
+
+if (!files[requested]) {
+  viewer.innerHTML = `<div class="message">
+    <h2>File not found</h2>
+    <p>The requested file name is: <strong>${requested}</strong></p>
+    <p>Please check capitalization, spaces, and file extension.</p>
+  </div>`;
+  fileName.textContent = requested;
+} else {
+  const src = files[requested];
+  fileName.textContent = src;
+  const lower = src.toLowerCase();
+
+  if (lower.endsWith(".mov") || lower.endsWith(".mp4")) {
+    const video = document.createElement("video");
+    video.src = src;
+    video.controls = true;
+    video.autoplay = false;
+    viewer.appendChild(video);
+  } else if (lower.endsWith(".heic")) {
+    viewer.innerHTML = `<div class="message">
+      <h2>HEIC file may not display in browsers</h2>
+      <p>This file exists in your list: <strong>${src}</strong></p>
+      <p>For reliable web viewing, convert it to JPG or JPEG and update the link.</p>
+      <p><a href="${encodeURI(src)}" target="_blank">Try opening the original file</a></p>
+    </div>`;
+  } else {
+    const img = document.createElement("img");
+    img.src = encodeURI(src);
+    img.alt = src;
+    viewer.appendChild(img);
+  }
+}
+</script>
+</body>
+</html>

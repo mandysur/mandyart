@@ -6,39 +6,86 @@
     "id":"tree02","title":"Tree 02","image":"tree02.jpeg","category":"Tree","year":"","medium":"","size":""
   },
   {
-    "id":"tree03","title":"Tree 03","image":"Tree03.jpeg","category":"Tree","year":"","medium":"","size":""
+    "id":"tree03","title":"Tree 03","image":"tree03.jpeg","category":"Tree","year":"","medium":"","size":""
   },
   {
     "id":"tree04","title":"Tree 04","image":"tree04.jpeg","category":"Tree","year":"","medium":"","size":""
   },
   {
-    "id":"tree05-1","title":"Tree 05-1","image":"Tree05_1.jpeg","category":"Tree","year":"","medium":"","size":""
+    "id":"tree05-1","title":"Tree 05-1","image":"tree05_1.jpeg","category":"Tree","year":"","medium":"","size":""
   },
   {
-    "id":"light01","title":"Light 01","image":"light01.jpg","category":"Light","year":"","medium":"","size":""
+    "id":"tree05-2","title":"Tree 05-2","image":"tree05_2.jpeg","category":"Tree","year":"","medium":"","size":""
+  },
+  {
+    "id":"tree05-3","title":"Tree 05-3","image":"tree05_3.jpeg","category":"Tree","year":"","medium":"","size":""
+  },
+
+  {
+    "id":"light01","title":"Light 01","image":"light01.jpeg","category":"Light","year":"","medium":"","size":""
   },
   {
     "id":"light02","title":"Light 02","image":"light02.jpeg","category":"Light","year":"","medium":"","size":""
   },
   {
-  "id":"light03","title":"Light 03","image":"light03.jpeg","category":"Light","year":"","medium":"","size":""
-},
-{
-  "id":"light04","title":"Light 04","image":"light04.jpeg","category":"Light","year":"","medium":"","size":""
-},
-{
-  "id":"light05","title":"Light 05","image":"light05.jpeg","category":"Light","year":"","medium":"","size":""
-},
-{
-  "id":"light06","title":"Light 06","image":"light06.JPG","category":"Light","year":"","medium":"","size":""
-},
-{
-  "id":"light07","title":"Light 07","image":"light07.jpeg","category":"Light","year":"","medium":"","size":""
+    "id":"light03","title":"Light 03","image":"light03.jpeg","category":"Light","year":"","medium":"","size":""
   },
-{
-  "id":"pearl01","title":"pearl 01","image":"pearl01.jpeg","category":"pearl","year":"","medium":"","size":""
+  {
+    "id":"light04","title":"Light 04","image":"light04.jpeg","category":"Light","year":"","medium":"","size":""
   },
-{
-   "id":"pearl02","title":"pearl 02","image":"pearl02.jpeg","category":"pearl","year":"","medium":"","size":""
-}    
+  {
+    "id":"light05","title":"Light 05","image":"light05.jpeg","category":"Light","year":"","medium":"","size":""
+  },
+  {
+    "id":"light06","title":"Light 06","image":"light06.jpeg","category":"Light","year":"","medium":"","size":""
+  },
+  {
+    "id":"light07","title":"Light 07","image":"light07.jpeg","category":"Light","year":"","medium":"","size":""
+  },
+
+  {
+    "id":"window01","title":"Window 01","image":"window01.jpeg","category":"Window","year":"","medium":"","size":""
+  },
+  {
+    "id":"window02","title":"Window 02","image":"window02.jpeg","category":"Window","year":"","medium":"","size":""
+  },
+  {
+    "id":"window03","title":"Window 03","image":"window03.jpeg","category":"Window","year":"","medium":"","size":""
+  },
+  {
+    "id":"window04","title":"Window 04","image":"window04.jpeg","category":"Window","year":"","medium":"","size":""
+  },
+
+  {
+    "id":"gentle01","title":"Gentle 01","image":"gentle01.jpeg","category":"Gentle","year":"","medium":"","size":""
+  },
+  {
+    "id":"gentle02","title":"Gentle 02","image":"gentle02.jpeg","category":"Gentle","year":"","medium":"","size":""
+  },
+  {
+    "id":"gentle03","title":"Gentle 03","image":"gentle03.jpeg","category":"Gentle","year":"","medium":"","size":""
+  },
+  {
+    "id":"gentle04","title":"Gentle 04","image":"gentle04.jpeg","category":"Gentle","year":"","medium":"","size":""
+  },
+
+  {
+    "id":"life01","title":"Life 01","image":"life01.jpeg","category":"Life","year":"","medium":"","size":""
+  },
+  {
+    "id":"life02","title":"Life 02","image":"life02.jpeg","category":"Life","year":"","medium":"","size":""
+  },
+  {
+    "id":"life03","title":"Life 03","image":"life03.jpeg","category":"Life","year":"","medium":"","size":""
+  },
+  {
+    "id":"life04","title":"Life 04","image":"life04.jpeg","category":"Life","year":"","medium":"","size":""
+  },
+
+  {
+    "id":"pearl01","title":"Pearl 01","image":"pearl01.jpeg","category":"Pearl","year":"","medium":"","size":""
+  },
+  {
+    "id":"pearl02","title":"Pearl 02","image":"pearl02.jpeg","category":"Pearl","year":"","medium":"","size":""
+  }
 ]

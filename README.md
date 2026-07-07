@@ -1,2 +1,0 @@
-# mandyart
-painter, art educator

@@ -21,6 +21,18 @@
     "id":"light02","title":"Light 02","image":"light02.jpeg","category":"Light","year":"","medium":"","size":""
   },
   {
-    "id":"main","title":"Main","image":"main.JPG","category":"Painting","year":"","medium":"","size":""
-  }
+  "id":"light03","title":"Light 03","image":"light03.jpeg","category":"Light","year":"","medium":"","size":""
+},
+{
+  "id":"light04","title":"Light 04","image":"light04.jpeg","category":"Light","year":"","medium":"","size":""
+},
+{
+  "id":"light05","title":"Light 05","image":"light05.jpeg","category":"Light","year":"","medium":"","size":""
+},
+{
+  "id":"light06","title":"Light 06","image":"light06.JPG","category":"Light","year":"","medium":"","size":""
+},
+{
+  "id":"light07","title":"Light 07","image":"light07.jpeg","category":"Light","year":"","medium":"","size":""
+}
 ]

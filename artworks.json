@@ -34,5 +34,11 @@
 },
 {
   "id":"light07","title":"Light 07","image":"light07.jpeg","category":"Light","year":"","medium":"","size":""
-}
+  },
+{
+  "id":"pearl01","title":"pearl 01","image":"pearl01.jpeg","category":"Light","year":"","medium":"","size":""
+  },
+{
+   "id":"pearl02","title":"pearl 02","image":"pearl02.jpeg","category":"Light","year":"","medium":"","size":""
+}    
 ]

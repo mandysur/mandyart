@@ -90,4 +90,68 @@
   {
     "id":"pearl02","title":"Pearl 02","image":"pearl02.jpeg","category":"Pearl","year":"","medium":"","size":""
   }
+  ,
+  {
+    "id": "drawing01",
+    "title": "Drawing 01",
+    "image": "drawing01.jpeg",
+    "category": "Drawing",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "drawing02",
+    "title": "Drawing 02",
+    "image": "drawing02.jpeg",
+    "category": "Drawing",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "drawing03",
+    "title": "Drawing 03",
+    "image": "drawing03.jpeg",
+    "category": "Drawing",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "drawing04",
+    "title": "Drawing 04",
+    "image": "drawing04.jpeg",
+    "category": "Drawing",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "drawing05",
+    "title": "Drawing 05",
+    "image": "drawing05.jpeg",
+    "category": "Drawing",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "drawing06",
+    "title": "Drawing 06",
+    "image": "drawing06.jpeg",
+    "category": "Drawing",
+    "year": "",
+    "medium": "",
+    "size": ""
+  },
+  {
+    "id": "drawing07",
+    "title": "Drawing 07",
+    "image": "drawing07.jpeg",
+    "category": "Drawing",
+    "year": "",
+    "medium": "",
+    "size": ""
+  }
 ]

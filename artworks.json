@@ -42,7 +42,9 @@
   {
     "id":"light07","title":"Light 07","image":"light07.jpeg","category":"Light","year":"","medium":"","size":""
   },
-
+ {
+    "id":"light08","title":"Light 08","image":"light08.jpeg","category":"Light","year":"","medium":"","size":""
+  },
   {
     "id":"window01","title":"Window 01","image":"window01.jpeg","category":"Window","year":"","medium":"","size":""
   },
